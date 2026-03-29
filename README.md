@@ -1,85 +1,117 @@
 # Arthenyx — Autonomous Cost Intelligence Platform
-Arthenyx is a multi-agent AI system designed to bridge the gap between reactive monitoring and autonomous financial operations. It detects cost risks before they manifest in billing dashboards by analyzing the "narrative" of your infrastructure.
 
-🚀 The Core Innovation: Narrative Fragility Index (NFI)
-Traditional FinOps is reactive—you find out you spent too much after the bill arrives. Arthenyx computes the Narrative Fragility Index (NFI):
+**Arthenyx** is a multi-agent AI system that detects cost risks *before* they appear in dashboards, diagnoses root causes, and takes autonomous or human-in-the-loop corrective actions.
 
-Structured Data: Cloud usage logs and billing metrics.
+---
 
-Unstructured Signals: DevOps reports, deployment narratives, and resource logs.
+## 🚀 Overview
 
-The Result: An early warning signal that identifies financial inefficiencies before the "spike" happens.
+Traditional FinOps is reactive. **Arthenyx is proactive.**
 
-🤖 System Architecture
-Arthenyx operates through a specialized chain of AI agents:
+It analyzes unstructured signals (reports, logs, narratives) and structured cost data to compute a **Narrative Fragility Index (NFI)** — a proprietary early warning signal for financial inefficiencies.
 
-IngestionAgent: Aggregates logs and narrative reports.
+When risk is detected, a chain of specialized AI agents:
+1. **Identifies** the root cause.
+2. **Decides** the optimal corrective action.
+3. **Executes** or escalates the task.
+4. **Logs** everything in a transparent audit trail.
 
-NarrativeAnalysisAgent: Parses unstructured text for risk signals.
+---
 
-DriftDetectionAgent (NFI Engine): Computes the risk score.
+## 🤖 System Architecture
 
-DecisionAgent: Evaluates root causes and determines corrective paths.
+The platform operates via a sequential multi-agent pipeline:
 
-ActionAgent: Executes autonomous fixes or prepares human-in-the-loop escalations.
+`IngestionAgent` → `NarrativeAnalysisAgent` → `DriftDetectionAgent (NFI Engine)` → `DecisionAgent` → `ActionAgent` → `AuditAgent`
 
-AuditAgent: Maintains a transparent, immutable log of financial impact.
+---
 
-✨ Features
-Predictive Risk Detection: Move beyond simple threshold alerts.
+## ✨ Key Features
 
-Multi-Agent Pipeline: Autonomous reasoning for complex cloud environments.
+* **Narrative-Driven Detection:** Finds hidden costs in DevOps logs and internal narratives.
+* **Multi-Agent Decision Pipeline:** Autonomous reasoning with zero manual intervention.
+* **Hybrid Execution:** Support for both autonomous fixes and human-in-the-loop approvals.
+* **Real-time Simulation Dashboard:** A high-fidelity frontend built with Glassmorphism principles.
+* **Financial Impact Audit:** Full logging of every action with calculated monthly savings.
 
-Real-time Simulation Dashboard: High-fidelity Glassmorphism UI for monitoring NFI trends.
+---
 
-Financial Impact Logging: Every action is mapped to potential savings (e.g., ₹/hr).
+## 🛠 Tech Stack
 
-Human-in-the-loop: Configurable thresholds for autonomous vs. manual execution.
+### Backend
+* **Language:** Python 3
+* **Logic:** Dataclasses, Agentic Simulation APIs
+* **Architecture:** Multi-agent orchestration
 
-🛠️ Tech Stack
-Component	Technologies
-Backend	Python 3, Dataclasses, Agentic Logic
-Frontend	React, Lovable, Framer Motion (Animations)
-Design	Glassmorphism, Tailwind CSS
-📂 Project Structure
-Plaintext
+### Frontend
+* **Framework:** React (via Lovable)
+* **Animations:** Framer Motion
+* **UI/UX:** Glassmorphism Design System, Tailwind CSS
+
+---
+
+## 📂 Project Structure
+
+```text
 Arthenyx/
-├── BackendLogic/
-│   └── Main_Agentic.py         # Core multi-agent logic & NFI engine
-├── SimulationFrontend/
-│   ├── src/                    # React components & Framer Motion logic
-│   └── package.json
-└── README.md
-🏃 Getting Started
-Note: The Frontend is a high-fidelity simulation; the Backend demonstrates the core decision-making logic.
+└── Arthenyx/
+    ├── BackendLogic/
+    │   └── Main_Agentic.py         # Core Agentic Intelligence
+    ├── SimulationFrontend/
+    │   ├── src/                    # React UI Components
+    │   └── package.json            # Dependencies
+    └── README.md                   # Documentation
+```
 
-1. Backend Setup (Python)
-Bash
+---
+
+## ⚙️ Running the Project Locally
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/arthenyx.git](https://github.com/your-username/arthenyx.git)
+cd arthenyx/Arthenyx
+```
+
+### 2. Backend Setup (Python)
+Navigate to the logic directory and run the engine:
+```bash
 cd BackendLogic
 python Main_Agentic.py
-Expected Output: You will see the agentic pipeline execute in the terminal, showing NFI computation, decision logs, and projected savings (e.g., Savings: ₹1,040,400/mo).
+```
 
-2. Frontend Setup (React UI)
-Bash
+**Expected Terminal Output:**
+* Multi-agent pipeline execution logs
+* NFI Score computation (e.g., `0.5670`)
+* Decision & Action logs
+* **Financial Impact Report:** > *Savings: ₹1,445/hr | ₹1,040,400/mo*
+
+### 3. Frontend Setup (Simulation UI)
+From the `Arthenyx/Arthenyx` directory, run:
+```bash
 cd SimulationFrontend
 npm install
 npm run dev
-Navigate to http://localhost:8080/ to view the real-time simulation dashboard.
+```
+**View the Dashboard:** Open http://localhost:8080/
 
-🎯 Demo Scenarios
-Cloud Over-provisioning: Detects demand slowdown → Scaledown triggered.
+---
 
-Vendor Duplication: Identifies redundant SaaS tools → Consolidation recommended.
+## 📝 Important Notes
 
-SLA Breach Risk: Detects operational bottlenecks → Task reassignment executed.
+* **Data Handling:** This project uses simulated data for demonstration purposes.
+* **Note on Structure:** The main project files are located within the nested `/Arthenyx` directory.
+* **Simulation Status:** The Frontend is currently a high-fidelity simulation; the Backend demonstrates the real decision logic and NFI engine.
 
-🚧 Roadmap & Limitations
-Mocked APIs: Current version uses simulated cloud and billing APIs for demonstration.
+---
 
-Future Integration: Plans to connect directly to AWS Cost Explorer and SaaS billing endpoints.
+## 🔮 Future Improvements
 
-Persistence: Move from in-memory audit logs to a persistent database (PostgreSQL).
+* **Live Integration:** Connect frontend to backend via FastAPI.
+* **Real Cloud Hooks:** Replace mock APIs with AWS Cost Explorer and SaaS billing endpoints.
+* **NLP Enhancement:** Integration of LLMs for deeper real-time narrative analysis.
 
-Author: Aditi Rathore | Built for Hackathon v1.0
+---
 
-Would you like me to generate a specific "How it Works" section for the NFI math to make the technical depth even more impressive?
+**Author:** Aditi Rathore  
+*Hackathon Build — Arthenyx v1.0*
