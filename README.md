@@ -44,7 +44,7 @@ The platform operates via a sequential multi-agent pipeline:
 * **Architecture:** Multi-agent orchestration
 
 ### Frontend
-* **Framework:** React (via Lovable)
+* **Framework:** React 
 * **Animations:** Framer Motion
 * **UI/UX:** Glassmorphism Design System, Tailwind CSS
 
