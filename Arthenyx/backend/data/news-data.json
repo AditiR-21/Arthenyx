@@ -1,0 +1,62 @@
+[
+  {
+    "title": "AWS cloud costs surge 18% for Indian enterprises amid rising compute demand",
+    "description": "Indian enterprises are facing significant increases in AWS and Azure cloud bills as AI workloads and data processing demands spike. FinOps teams report budget overruns of 15-25% in Q1 2025.",
+    "source": "Economic Times Tech",
+    "publishedAt": "2025-04-10"
+  },
+  {
+    "title": "RBI policy uncertainty weighs on IT spending decisions at large Indian banks",
+    "description": "Following RBI's ambiguous stance on digital infrastructure investment, major private sector banks are delaying cloud migration decisions, creating cost inefficiencies in hybrid setups.",
+    "source": "Mint",
+    "publishedAt": "2025-04-09"
+  },
+  {
+    "title": "SaaS vendor consolidation wave hits Indian startups as funding winter persists",
+    "description": "Series B and C stage startups are aggressively auditing SaaS subscriptions, finding 20-30% redundancy across productivity and analytics tools. Vendor duplication estimated at ₹2-5Cr annually per company.",
+    "source": "Inc42",
+    "publishedAt": "2025-04-08"
+  },
+  {
+    "title": "Infosys, TCS warn of rising infrastructure costs impacting delivery margins",
+    "description": "India's top IT exporters flagged escalating cloud infrastructure costs in Q4 earnings calls, with compute and data egress fees cited as primary margin headwinds in FY2025.",
+    "source": "Business Standard",
+    "publishedAt": "2025-04-07"
+  },
+  {
+    "title": "Data egress fees emerge as hidden cost killer for Indian cloud-native firms",
+    "description": "A study of 50 Indian cloud-native companies reveals data transfer costs accounting for 12-18% of total cloud spend — far above the 5% industry benchmark — due to multi-region architectures.",
+    "source": "NASSCOM Insights",
+    "publishedAt": "2025-04-06"
+  },
+  {
+    "title": "Zepto, Blinkit infrastructure costs balloon as rapid commerce scales delivery ops",
+    "description": "Quick-commerce platforms are seeing cloud infrastructure costs grow faster than revenue, with real-time inventory and routing systems requiring aggressive over-provisioning to meet SLA commitments.",
+    "source": "The Ken",
+    "publishedAt": "2025-04-05"
+  },
+  {
+    "title": "SEBI tightens compliance requirements, forcing fintech cloud architecture overhauls",
+    "description": "New SEBI data localisation norms require financial services firms to restructure multi-cloud deployments, adding estimated ₹8-15Cr in migration costs for mid-size NBFCs and brokerages.",
+    "source": "Financial Express",
+    "publishedAt": "2025-04-04"
+  },
+  {
+    "title": "Google Cloud expands India region capacity; competitive pressure on AWS pricing expected",
+    "description": "Google's new Mumbai and Delhi cloud zones are expected to intensify pricing competition with AWS and Azure, potentially reducing compute costs by 10-15% for Indian enterprises by Q3 2025.",
+    "source": "TechCrunch India",
+    "publishedAt": "2025-04-03"
+  },
+  {
+    "title": "Idle cloud resources cost Indian enterprises ₹3,200 crore annually, report finds",
+    "description": "A Gartner-commissioned study finds that zombie VMs, unused storage volumes, and over-provisioned databases account for 28% of total cloud spend in Indian enterprises, driven by lack of automated governance.",
+    "source": "CIO India",
+    "publishedAt": "2025-04-02"
+  },
+  {
+    "title": "Meesho engineering team cuts AWS bill by 40% through aggressive FinOps programme",
+    "description": "Social commerce platform Meesho publicly shared how its 6-month FinOps initiative — combining spot instance migration, rightsizing, and reserved capacity — saved ₹45Cr in annual cloud spend.",
+    "source": "Engineering at Meesho Blog",
+    "publishedAt": "2025-04-01"
+  }
+]
